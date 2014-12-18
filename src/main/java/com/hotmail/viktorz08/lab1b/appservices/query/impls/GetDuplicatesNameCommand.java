@@ -26,21 +26,21 @@ public class GetDuplicatesNameCommand implements QueryCommand<List<Employers>> {
 
         Map<String, Integer> nameMap = new HashMap<>();
 
-        dataList.forEach(data -> {
+        for (Employers data : dataList) {
             String name = data.getName();
             nameMap.putIfAbsent(name, 0);
             nameMap.put(name, nameMap.get(name) + 1);
-        });
+        }
 
         List<Employers> duplicates = new ArrayList<>();
-        dataList.forEach(data -> {
+        for (Employers data : duplicates) {
             String name = data.getName();
             int count = nameMap.get(name);
-            if(count != 1){
+            if (count != 1) {
                 duplicates.add(data);
-                nameMap.put(name,count-1);
+                nameMap.put(name, count - 1);
             }
-        });
+        }
 
         return duplicates;
     }

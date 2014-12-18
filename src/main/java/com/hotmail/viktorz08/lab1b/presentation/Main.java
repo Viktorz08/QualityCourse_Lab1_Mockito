@@ -37,9 +37,8 @@ public class Main {
 //        executor.invoke(command);
         List<Employers> list = (List<Employers>) executor2.invoke(command2);
 
-        list.forEach( employer ->{
-                    System.out.println(employer.toString());
-                }
-        );
+        for (Employers employer : list) {
+            System.out.println(employer.toString());
+        }
     }
 }
