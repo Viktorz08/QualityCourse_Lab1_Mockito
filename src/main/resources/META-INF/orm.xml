@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm ">
+
+    <entity class="com.hotmail.viktorz08.lab1b.repository.entities.Employers">
+        <table name="EMPLOYERS"/>
+        <attributes>
+            <id name="employerID">
+                <column name="ID"/>
+                <generated-value strategy="SEQUENCE" generator="GEN_EMPLOYERS_ID"/>
+
+            </id>
+            <basic name="name">
+                <column name="NAME"/>
+            </basic>
+            <basic name="surname">
+                <column name="SURNAME"/>
+            </basic>
+            <basic name="birthday">
+                <column name="BIRTHDAY"/>
+            </basic>
+            <basic name="salary">
+                <column name="SALARY"/>
+            </basic>
+        </attributes>
+    </entity>
+
+</entity-mappings>
