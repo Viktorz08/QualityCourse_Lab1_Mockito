@@ -24,7 +24,7 @@ public class GetDuplicatesNameCommand implements QueryCommand<List<Employers>> {
     public List<Employers> execute() {
         List<Employers> dataList = repository.getEmployersData();
 
-        Map<String, Integer> nameMap = new HashMap<>();
+        Map<String, Integer> nameMap = new HashMap<String, Integer>();
 
         for (Employers data : dataList) {
             String name = data.getName();

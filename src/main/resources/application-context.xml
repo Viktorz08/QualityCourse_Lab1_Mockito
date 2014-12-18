@@ -12,7 +12,7 @@
 
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="org.firebirdsql.jdbc.FBDriver"/>
-        <property name="url" value="jdbc:firebirdsql://localhost:3050/D:/Projects/SQL/DB/LABEMPLOYERS.FDB"/>
+        <property name="url" value="jdbc:firebirdsql://localhost:3050/D:/Sources/SQL/DB/LABEMPLOYERS.FDB"/>
         <property name="username" value="SYSDBA"/>
         <property name="password" value="masterkey"/>
     </bean>
