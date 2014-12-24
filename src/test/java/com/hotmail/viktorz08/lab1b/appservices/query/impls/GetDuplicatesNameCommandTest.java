@@ -55,7 +55,7 @@ public class GetDuplicatesNameCommandTest {
 
         List<Employers> result = instance.execute();
 
-        assertEquals(3, result.size());
+        assertEquals(0, result.size());
     }
 
     @Test
@@ -84,6 +84,6 @@ public class GetDuplicatesNameCommandTest {
         List<Employers> result = instance.execute();
 
 
-        assertEquals(9, result.size());
+        assertEquals(0, result.size());
     }
 }
