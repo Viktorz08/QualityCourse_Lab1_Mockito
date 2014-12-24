@@ -36,7 +36,7 @@ public class GetDuplicatesNameCommandTest {
 
         EmployerDataRepository repo = mock(EmployerDataRepository.class);
 
-        List<Employers> employersList = new ArrayList<>();
+        List<Employers> employersList = new ArrayList<Employers>();
 
         Random random = new Random(0);
         for (int i = 0; i < 10; i++) {
@@ -64,7 +64,7 @@ public class GetDuplicatesNameCommandTest {
 
         EmployerDataRepository repo = mock(EmployerDataRepository.class);
 
-        List<Employers> employersList = new ArrayList<>();
+        List<Employers> employersList = new ArrayList<Employers>();
 
         Random random = new Random(1);
         for (int i = 0; i < 10; i++) {

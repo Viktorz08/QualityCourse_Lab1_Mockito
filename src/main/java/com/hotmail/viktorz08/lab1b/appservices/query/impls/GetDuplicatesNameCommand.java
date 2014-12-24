@@ -32,7 +32,7 @@ public class GetDuplicatesNameCommand implements QueryCommand<List<Employers>> {
             nameMap.put(name, nameMap.get(name) + 1);
         }
 
-        List<Employers> duplicates = new ArrayList<>();
+        List<Employers> duplicates = new ArrayList<Employers>();
         for (Employers data : duplicates) {
             String name = data.getName();
             int count = nameMap.get(name);

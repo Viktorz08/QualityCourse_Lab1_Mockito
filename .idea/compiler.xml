@@ -25,6 +25,8 @@
         <module name="Lab1_Mockito" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Lab1_Mockito" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
-
